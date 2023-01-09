@@ -8,6 +8,60 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <h1 class="Intro-text" id="title">FreeCodeCamp Survey Form</h1>
+        <p class="description" id="description">Thank you for taking time to help us improve the platform</p>
+    </header>
+
+    <section class="form-section">
+        <form action="#" id="survey-form">
+            <label for="Name" id="name-label">Name
+                <input type="text" name="Name" id="name" placeholder="Enter your name">
+            </label> 
+            <br>
+            <label for="Email" id="email-label">Email
+                <input type="email" name="email" id="email" placeholder="Enter your email">
+            </label>
+            <br>
+            <label for="Age" id="number-label">Age(optional)
+                <input type="text" name="age" id="number" placeholder="Age" maxlength="2">
+            </label>
+            <br>
+            <label for="role">Which option best describes your current role?
+                <input type="text" name="" id="" placeholder="select current role">
+            </label>
+            <br>
+
+            <label for="radio-button">Would you recommend FreeCodeCamp to a friend? <br>
+                <input type="radio">Definetly <br>
+                <input type="radio" name="" id="">Maybe <br>
+                <input type="radio" name="" id="">Not sure <br>
+            </label>
+            <br>
+
+            <label for="course">What would you like to see improved? (Check all that apply) <br>
+                <input type="checkbox" name="Front-end" id="Front-end" value="Front-end projects" checked> Front-end Projects <br>
+                <input type="checkbox" name="" id="" value="" checked> Back-end Projects <br>
+                <input type="checkbox" name="" id="" value="" checked> Data Visualization <br>
+                <input type="checkbox" name="" id="" value="" checked> Challenges <br>
+                <input type="checkbox" name="" id="" value="" checked> Open Source Community <br>
+                <input type="checkbox" name="" id="" value="" checked> Gitter help rooms <br>
+                <input type="checkbox" name="" id="" value="" checked> Videos <br>
+                <input type="checkbox" name="" id="" value="" checked> City Meetups <br>
+                <input type="checkbox" name="" id="" value="" checked> Wiki <br>
+                <input type="checkbox" name="" id="" value="" checked> Forum <br>
+                <input type="checkbox" name="" id="" value="" checked> Additional Courses <br>
+            </label>
+            <br>
+
+            <label for="comments">Any comments or suggestions? <br>
+                <input type="textarea" placeholder="Enter your comment here...">
+            </label>
+            <br>
+
+            <button id="submit">Submit</button>
+        </form>
+    </section>
     
 </body>
 </html>
