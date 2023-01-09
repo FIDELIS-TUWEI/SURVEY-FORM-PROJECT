@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(computer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    border: 2px solid blue;
+    padding: 40px;
+    text-align: center;
+}
+
+.form-section {
+    border: 3px solid goldenrod;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    border: 3px solid magenta;
+}
