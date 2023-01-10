@@ -3,13 +3,13 @@ const name = document.getElementById("name");
 const email = document.getElementById("email");
 const number = document.getElementById("number");
 
-
+// Form events
 form.addEventListener('submit', e => {
     e.preventDefault();
 
     validateInputs();
 });
-
+// Error message function
 const setError = (element, message) => {
     const inputControl = element.parentElement;
     const errorDisplay = document.querySelector(".error");
@@ -19,7 +19,7 @@ const setError = (element, message) => {
     inputControl.classList.remove('success');
 
 }
-
+//Success message function
 const setSuccess = element => {
     const inputControl = element.parentElement;
     const errorDisplay = document.querySelector(".error");
@@ -28,13 +28,13 @@ const setSuccess = element => {
     inputControl.classList.add('success');
     inputControl.classList.remove('error');
 }
-
+//Email Input Validity function
 const isValidEmail = email => {
     const re = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
     return re.text(String(email).toLowerCase());
 }
 
-
+// Inputs validation Function
 const validateInputs = () => {
     const nameValue = name.value.trim();
     const emailValue = email.value.trim();
