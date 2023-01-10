@@ -1,28 +1,18 @@
-* {
+*,
+*::before,
+*::after {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
 body {
-    background-image: url(computer.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+    height: 100vh;
+    background: linear-gradient(
+        45deg,
+        rgba(218,34,225,0.6),
+        rgba(151,51,238,0.7)
 
-header {
-    border: 2px solid blue;
-    padding: 40px;
-    text-align: center;
-}
-
-.form-section {
-    border: 3px solid goldenrod;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-form {
-    border: 3px solid magenta;
+    ),
+    url(laptop.jpg) no-repeat center center / cover;
 }
