@@ -62,3 +62,15 @@ const validateInputs = () => {
         setSuccess(number);
     }
 }
+
+// Radio-btns events
+let radioBtns = document.querySelectorAll("input[name='radio-choice']");
+
+let findSelected = () => {
+    let selected = document.querySelector("input[name='radio-choice']:checked").value;
+}
+
+radioBtns.forEach(radioBtn => {
+    radioBtn.addEventListener("change", findSelected);
+});
+findSelected();
