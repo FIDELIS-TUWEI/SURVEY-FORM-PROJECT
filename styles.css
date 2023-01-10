@@ -16,3 +16,54 @@ body {
     ),
     url(laptop.jpg) no-repeat center center / cover;
 }
+
+#survey-form {
+    width: 300px;
+    margin: 20vh auto 0 auto;
+    padding: 20px;
+    background: #3a4e8c;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+#survey-form button {
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    color: #fff;
+    background: #42c952;
+    border: none;
+    border-radius: 2px;
+}
+
+.input-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-control input {
+    border: 2px solid #fff;
+    border-radius: 2px;
+    display: block;
+    font-size: 12px;
+    padding: 8px;
+    width: 100%;
+}
+
+.input-control input:focus {
+    outline: 0;
+}
+
+.input-control.success input {
+    border-color: aqua;
+}
+
+.input-control.error input {
+    border-color: #ed0a02;
+}
+
+.input-control .error {
+    color: #ed0a02;
+    font-size: 9px;
+    height: 13px;
+}

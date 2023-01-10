@@ -13,5 +13,30 @@
     <p id="description">Thank you for taking the time to help us improve the platform</p>
    </header>
     
+   <div>
+    <form action="#" id="survey-form">
+        <div class="input-control">
+            <label id="name-label" for="name">Name</label>
+            <input id="name" type="text" placeholder="Enter your name" required>
+            <div class="error"></div>
+        </div>
+
+        <div class="input-control">
+            <label id="email-label" for="email">Email</label>
+            <input id="email" type="email" name="name" placeholder="Enter your email" required>
+            <div class="error"></div>
+        </div>
+
+        <div class="input-control">
+            <label id="number-label" for="email">Age (optional)</label>
+            <input id="number" type="number" name="age" placeholder="Age">
+            <div class="error"></div>
+        </div>
+
+        <button id="submit" type="submit">Submit</button>
+    </form>
+</div>
+
+<script src="index.js"></script>
 </body>
 </html>
