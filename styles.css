@@ -46,7 +46,7 @@ body {
     border-radius: 2px;
     display: block;
     font-size: 12px;
-    padding: 8px;
+    padding: 6px;
     width: 100%;
 }
 
@@ -66,4 +66,14 @@ body {
     color: #ed0a02;
     font-size: 9px;
     height: 13px;
+}
+
+.input-control select {
+    border: none;
+    padding: 6px;
+    border-radius: 2px;
+}
+
+.input-control select:focus {
+    outline: 0;
 }
